@@ -1,0 +1,1897 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- ============================================================
+       SAHA HOME DECOR — Premium Plastic Chairs & Home Furniture
+       Karachi, Pakistan | Single Page Application
+       Built with HTML5, CSS3, Bootstrap 5, Vanilla JS, Font Awesome
+       ============================================================ -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+  <!-- ===================== META PIXEL CODE ===================== -->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'ENTER YOUR PIXEL ID');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=ENTER YOUR PIXEL ID&ev=PageView&noscript=1" /></noscript>
+  <!-- ===================== END META PIXEL CODE ===================== -->
+
+  <!-- ===================== SEO META TAGS ===================== -->
+  <title>Saha Home Decor | Premium Plastic Chairs in Karachi, Pakistan</title>
+  <meta name="description"
+    content="Saha Home Decor — Karachi's trusted reseller of premium plastic chairs & home furniture. Durable, stylish, affordable chairs for homes, offices, cafes and events. Order on WhatsApp today.">
+  <meta name="keywords"
+    content="plastic chairs Karachi, home decor Karachi, furniture reseller Pakistan, office chairs, dining chairs, outdoor chairs, kids chairs, event chairs, Saha Home Decor, Orangi Town furniture market">
+  <meta name="author" content="Saha Home Decor">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://sahahomedecor.pk/">
+
+  <!-- ===================== OPEN GRAPH TAGS ===================== -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Saha Home Decor | Premium Plastic Chairs in Karachi, Pakistan">
+  <meta property="og:description"
+    content="Durable, stylish, comfortable and affordable plastic chairs for homes, offices, cafes and events. Browse our collection and order directly on WhatsApp.">
+  <meta property="og:image" content="https://placehold.co/1200x630/1B365D/FFFFFF?text=SAHA+HOME+DECOR">
+  <meta property="og:url" content="https://sahahomedecor.pk/">
+  <meta property="og:site_name" content="Saha Home Decor">
+  <meta property="og:locale" content="en_PK">
+
+  <!-- ===================== TWITTER CARD TAGS ===================== -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Saha Home Decor | Premium Plastic Chairs in Karachi, Pakistan">
+  <meta name="twitter:description"
+    content="Durable, stylish, comfortable and affordable plastic chairs for homes, offices, cafes and events.">
+  <meta name="twitter:image" content="https://placehold.co/1200x630/1B365D/FFFFFF?text=SAHA+HOME+DECOR">
+
+  <!-- ===================== FAVICON ===================== -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="alternate icon" href="assets/favicon.svg">
+  <!-- ===================== FONTS ===================== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- ===================== BOOTSTRAP 5 CSS (CDN) ===================== -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- ===================== FONT AWESOME (CDN) ===================== -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <!-- ===================== CUSTOM STYLESHEET ===================== -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- ===================== HERO REDESIGN + TRUST/HIGHLIGHTS + EXTRA RESPONSIVE STYLES ===================== -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;600;700&display=swap');
+
+    :root {
+      --hero-cream: #fff8f2;
+      --hero-red: #d62828;
+      --hero-red-deep: #b61f1f;
+      --hero-gold: #f4b400;
+      --hero-charcoal: #222222;
+      --hero-muted: #5f5a56;
+    }
+
+    .hero {
+      min-height: 100svh;
+      position: relative;
+      overflow: hidden;
+      padding-top: 8rem;
+      padding-bottom: 5rem;
+      display: flex;
+      align-items: center;
+      background:
+        radial-gradient(circle at top left, rgba(244, 180, 0, 0.12) 0, transparent 24%),
+        radial-gradient(circle at 80% 20%, rgba(214, 40, 40, 0.08) 0, transparent 24%),
+        linear-gradient(135deg, #ffffff 0%, var(--hero-cream) 100%);
+    }
+
+    .hero-bg,
+    .hero-overlay {
+      display: none !important;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 15% 20%, rgba(244, 180, 0, 0.14) 0 10%, transparent 11%),
+        radial-gradient(circle at 78% 12%, rgba(214, 40, 40, 0.11) 0 10%, transparent 11%),
+        radial-gradient(circle at 52% 84%, rgba(244, 180, 0, 0.10) 0 12%, transparent 13%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .hero-shapes {
+      opacity: 0.8;
+    }
+
+    .hero-shapes .shape {
+      background: rgba(244, 180, 0, 0.12);
+      border: 1px solid rgba(244, 180, 0, 0.2);
+      box-shadow: none;
+    }
+
+    .hero-shapes .shape-1 {
+      top: 4rem;
+      left: 6%;
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+    }
+
+    .hero-shapes .shape-2 {
+      top: auto;
+      bottom: 12%;
+      left: 11%;
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      background: rgba(214, 40, 40, 0.08);
+      border-color: rgba(214, 40, 40, 0.12);
+    }
+
+    .hero-shapes .shape-3 {
+      top: 14%;
+      right: 8%;
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      background: rgba(244, 180, 0, 0.08);
+      border-color: rgba(244, 180, 0, 0.16);
+    }
+
+    .hero-shapes .shape-chair {
+      top: 22%;
+      right: 14%;
+      opacity: 0.22;
+      filter: drop-shadow(0 12px 24px rgba(34, 34, 34, 0.08));
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-eyebrow {
+      color: var(--hero-red);
+      font-weight: 700;
+      font-size: 0.9rem;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      margin-bottom: 1.25rem;
+    }
+
+    .hero-headline {
+      color: var(--hero-charcoal);
+      font-family: "Fraunces", Georgia, serif;
+      font-size: clamp(2.6rem, 5vw, 4.6rem);
+      line-height: 1.05;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 1.15rem;
+    }
+
+    .hero-headline .hero-accent {
+      color: var(--hero-red);
+      font-weight: 700;
+    }
+
+    .hero-subheading {
+      color: var(--hero-muted);
+      font-size: clamp(1.05rem, 1.8vw, 1.25rem);
+      font-weight: 500;
+      margin-bottom: 1.1rem;
+      max-width: 720px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero-urdu {
+      font-family: "Noto Nastaliq Urdu", "Amiri", serif;
+      color: var(--hero-gold);
+      font-size: clamp(1.15rem, 2vw, 1.45rem);
+      font-weight: 600;
+      margin: 0 auto 2rem;
+      max-width: 760px;
+      line-height: 2.2;
+      letter-spacing: 0.01em;
+    }
+
+    .hero-buttons {
+      gap: 1rem;
+      margin-top: 0.4rem;
+    }
+
+    .btn-hero-primary {
+      background: linear-gradient(135deg, var(--hero-red), var(--hero-red-deep));
+      color: #fff;
+      border: none;
+      box-shadow: 0 14px 35px rgba(214, 40, 40, 0.18);
+      padding: 0.9rem 1.45rem;
+      border-radius: 999px;
+      font-weight: 700;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .btn-hero-primary:hover,
+    .btn-hero-primary:focus {
+      color: #fff;
+      transform: translateY(-2px);
+      box-shadow: 0 18px 42px rgba(214, 40, 40, 0.24);
+    }
+
+    .btn-hero-whatsapp {
+      background: linear-gradient(135deg, #ffd15f, var(--hero-gold));
+      color: #222;
+      border: none;
+      box-shadow: 0 14px 35px rgba(244, 180, 0, 0.22);
+      padding: 0.9rem 1.45rem;
+      border-radius: 999px;
+      font-weight: 700;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .btn-hero-whatsapp:hover,
+    .btn-hero-whatsapp:focus {
+      color: #222;
+      transform: translateY(-2px);
+      box-shadow: 0 18px 42px rgba(244, 180, 0, 0.28);
+    }
+
+    .navbar {
+      background: rgba(255, 255, 255, 0.88);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(34, 34, 34, 0.06);
+      box-shadow: 0 8px 24px rgba(34, 34, 34, 0.05);
+    }
+
+    .navbar .navbar-brand .brand-title,
+    .navbar .navbar-brand .brand-subtitle,
+    .navbar .navbar-nav .nav-link,
+    .navbar .navbar-toggler {
+      color: #222;
+    }
+
+    .navbar .navbar-nav .nav-link.active,
+    .navbar .navbar-nav .nav-link:hover {
+      color: var(--hero-red);
+    }
+
+    .navbar .btn-nav-cta {
+      background: linear-gradient(135deg, var(--hero-red), var(--hero-red-deep));
+      color: #fff;
+      border: none;
+      box-shadow: 0 8px 20px rgba(214, 40, 40, 0.16);
+    }
+
+    .navbar .btn-nav-cta:hover {
+      color: #fff;
+    }
+
+    .hero-scroll-cue {
+      color: var(--hero-red);
+      border: 1px solid rgba(214, 40, 40, 0.22);
+      background: rgba(255, 255, 255, 0.75);
+      box-shadow: 0 12px 24px rgba(34, 34, 34, 0.06);
+    }
+
+    .hero-scroll-cue:hover {
+      background: #fff;
+      color: var(--hero-red-deep);
+    }
+
+    /* ===== TRUST STRIP (short business facts) ===== */
+    .trust-strip {
+      background: #1B365D;
+      padding: 0.9rem 0;
+    }
+
+    .trust-strip-inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 0.75rem 2rem;
+    }
+
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: #fff;
+      font-size: 0.92rem;
+      font-weight: 600;
+    }
+
+    .trust-item i {
+      color: #F5A623;
+      font-size: 1rem;
+    }
+
+    /* ===== PRODUCT HIGHLIGHTS BAR (short specs + delivery badge) ===== */
+    .product-highlights-bar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.6rem;
+      margin: -0.5rem 0 2rem;
+    }
+
+    .highlight-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      background: #fff;
+      border: 1px solid rgba(27, 54, 93, 0.15);
+      color: #1B365D;
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 0.5rem 0.9rem;
+      border-radius: 999px;
+      box-shadow: 0 4px 10px rgba(27, 54, 93, 0.06);
+    }
+
+    .highlight-chip i {
+      color: #E06D53;
+    }
+
+    .highlight-chip.delivery-chip {
+      background: #25D366;
+      color: #fff;
+      border-color: #25D366;
+    }
+
+    .highlight-chip.delivery-chip i {
+      color: #fff;
+    }
+
+    /* ===== STICKY ORDER BAR ===== */
+    .sticky-order-bar {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1050;
+      background: #1B365D;
+      box-shadow: 0 -6px 20px rgba(0, 0, 0, 0.18);
+      transform: translateY(100%);
+      transition: transform 0.35s ease;
+    }
+
+    .sticky-order-bar.show {
+      transform: translateY(0);
+    }
+
+    .sticky-order-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0.75rem 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .sticky-order-delivery {
+      color: #fff;
+      font-weight: 600;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      white-space: nowrap;
+    }
+
+    .sticky-order-delivery i {
+      color: #F5A623;
+    }
+
+    .btn-sticky-order {
+      background: #25D366;
+      color: #fff;
+      border: none;
+      padding: 0.55rem 1.2rem;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 0.9rem;
+      white-space: nowrap;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      text-decoration: none;
+    }
+
+    .btn-sticky-order:hover,
+    .btn-sticky-order:focus {
+      color: #fff;
+      opacity: 0.92;
+    }
+
+    body.has-sticky-bar .floating-whatsapp,
+    body.has-sticky-bar .floating-top {
+      bottom: 4.75rem !important;
+    }
+
+    @media (max-width: 480px) {
+      .sticky-order-delivery {
+        font-size: 0.76rem;
+      }
+
+      .btn-sticky-order {
+        font-size: 0.8rem;
+        padding: 0.5rem 0.9rem;
+      }
+
+      .sticky-order-inner {
+        padding: 0.6rem 1rem;
+      }
+    }
+
+    /* ===== EXTRA RESPONSIVE HARDENING (site-wide) ===== */
+    html {
+      overflow-x: hidden;
+    }
+
+    body {
+      overflow-x: hidden;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    @media (max-width: 991px) {
+      .hero {
+        padding-top: 7.5rem;
+      }
+
+      .hero-shapes .shape-chair {
+        right: 2%;
+        top: 18%;
+        width: 90px;
+        height: 90px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .hero {
+        min-height: 92svh;
+        padding-top: 6.5rem;
+        padding-bottom: 4rem;
+      }
+
+      .hero-headline {
+        font-size: clamp(2.2rem, 9vw, 3rem);
+      }
+
+      .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .hero-buttons .btn {
+        width: min(100%, 300px);
+        justify-content: center;
+      }
+
+      .hero-urdu {
+        font-size: 1.05rem;
+        line-height: 1.9;
+      }
+
+      .hero-shapes {
+        opacity: 0.6;
+      }
+
+      .hero-shapes .shape-1 {
+        width: 120px;
+        height: 120px;
+      }
+
+      .hero-shapes .shape-2 {
+        width: 70px;
+        height: 70px;
+      }
+
+      .hero-shapes .shape-3 {
+        width: 90px;
+        height: 90px;
+      }
+
+      .trust-strip-inner {
+        justify-content: flex-start;
+        gap: 0.6rem 1.2rem;
+      }
+
+      .trust-item {
+        font-size: 0.85rem;
+      }
+
+      .product-highlights-bar {
+        gap: 0.4rem;
+      }
+
+      .highlight-chip {
+        font-size: 0.78rem;
+        padding: 0.42rem 0.7rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-headline {
+        font-size: clamp(1.9rem, 10vw, 2.4rem);
+      }
+
+      .hero-subheading {
+        font-size: 0.95rem;
+      }
+
+      .trust-item {
+        width: 100%;
+        justify-content: flex-start;
+        font-size: 0.8rem;
+      }
+
+      .highlight-chip {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .product-highlights-bar {
+        flex-direction: column;
+        align-items: stretch;
+      }
+    }
+  </style>
+
+  <!-- ===================== SCHEMA.ORG STRUCTURED DATA ===================== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FurnitureStore",
+    "name": "Saha Home Decor",
+    "image": "https://placehold.co/1200x630/1B365D/FFFFFF?text=SAHA+HOME+DECOR",
+    "telephone": "+923197810809",
+    "email": "muddabir23136@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Sector 11½, Iqbal Market, Near MCB Bank, Furniture Market, Orangi Town",
+      "addressLocality": "Karachi",
+      "addressCountry": "PK"
+    },
+    "openingHours": "Mo-Sa 10:00-21:00",
+    "priceRange": "PKR 1200 - PKR 6000"
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- ============================================================
+       NAVBAR
+       ============================================================ -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand" href="#home">
+        <img class="brand-mark" src="./products/assetscomfort-logo.png" alt="Saha Home Decor logo" loading="lazy">
+        <span class="brand-text">
+          <span class="brand-title">SAHA</span>
+          <span class="brand-subtitle">HOME DECOR</span>
+        </span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#why-choose-us">Why Choose Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <a href="#contact" class="btn btn-nav-cta ms-lg-4">
+          <i class="fa-brands fa-whatsapp"></i> Order Now
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       HERO SECTION
+       ============================================================ -->
+  <!-- Replace the existing hero content block -->
+  <header class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-shapes" aria-hidden="true">
+      <span class="shape shape-1"></span>
+      <span class="shape shape-2"></span>
+      <span class="shape shape-3"></span>
+    </div>
+
+    <div class="container hero-content">
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-9 hero-panel">
+          <p class="hero-eyebrow reveal" data-reveal="fade">KARACHI'S TRUSTED PLASTIC FURNITURE STORE</p>
+          <h1 class="hero-headline reveal" data-reveal="up">Comfort <span class="hero-accent">Plastic
+              Chairs</span><br>For Every Space</h1>
+          <p class="hero-subheading reveal" data-reveal="up">Elegant • Durable • Comfortable • Affordable</p>
+          <p class="hero-urdu reveal" data-reveal="up">ہر گھر، ہر دفتر اور ہر کاروبار کے لیے معیاری پلاسٹک چیئرز</p>
+          <div class="hero-buttons reveal" data-reveal="up">
+            <a href="#products" class="btn btn-hero-primary btn-ripple">
+              <i class="fa-solid fa-couch"></i> Shop Now
+            </a>
+            <a href="#" class="btn btn-hero-whatsapp btn-ripple whatsapp-generic-btn"
+              data-message="Hello SAHA HOME DECOR, I am browsing your website and would like to know more about your chair collection. Please share details.">
+              <i class="fa-brands fa-whatsapp"></i> WhatsApp Order
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#why-choose-us" class="hero-scroll-cue" aria-label="Scroll down">
+      <i class="fa-solid fa-chevron-down"></i>
+    </a>
+  </header>
+
+  <!-- ============================================================
+       TRUST STRIP
+       ============================================================ -->
+  <section class="trust-strip">
+    <div class="container">
+      <div class="trust-strip-inner">
+        <div class="trust-item"><i class="fa-solid fa-award"></i><span>16+ Years Sales Experience</span></div>
+        <div class="trust-item"><i class="fa-solid fa-money-bill-wave"></i><span>Cash on Delivery — Karachi
+            Only</span></div>
+        <div class="trust-item"><i class="fa-solid fa-hand-holding-dollar"></i><span>Zero Advance — Pay After
+            Delivery</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       WHY CHOOSE US
+       ============================================================ -->
+
+  <section class="section why-choose-us" id="why-choose-us">
+    <div class="container">
+      <div class="section-heading text-center reveal" data-reveal="up">
+        <p class="section-eyebrow">Why Choose Us</p>
+        <h2>Built for Comfort. Made to Last.</h2>
+        <p class="section-lead">Every chair we sell is chosen for quality, comfort and value — because your home and
+          business deserve furniture that performs.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="feature-card reveal" data-reveal="up">
+            <div class="feature-icon"><i class="fa-solid fa-gem"></i></div>
+            <h3>Premium Quality</h3>
+            <p>Sourced from trusted manufacturers, every chair is tested for strength, finish and everyday durability.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="feature-card reveal" data-reveal="up" data-reveal-delay="100">
+            <div class="feature-icon"><i class="fa-solid fa-tags"></i></div>
+            <h3>Affordable Prices</h3>
+            <p>Showroom quality without showroom markup. Direct reseller pricing for homes, offices and events.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="feature-card reveal" data-reveal="up" data-reveal-delay="200">
+            <div class="feature-icon"><i class="fa-solid fa-palette"></i></div>
+            <h3>Multiple Colors</h3>
+            <p>From classic navy to vibrant coral, every design comes in a range of colors to match your space.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="feature-card reveal" data-reveal="up" data-reveal-delay="300">
+            <div class="feature-icon"><i class="fa-solid fa-truck-fast"></i></div>
+            <h3>Fast Delivery</h3>
+            <p>Quick, careful delivery across Karachi with flexible scheduling for bulk and event orders.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="feature-card reveal" data-reveal="up" data-reveal-delay="400">
+            <div class="feature-icon"><i class="fa-solid fa-shield-heart"></i></div>
+            <h3>Durable Material</h3>
+            <p>UV-resistant, weatherproof plastics built to withstand daily use indoors and outdoors alike.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="feature-card reveal" data-reveal="up" data-reveal-delay="500">
+            <div class="feature-icon"><i class="fa-solid fa-face-smile"></i></div>
+            <h3>Customer Satisfaction</h3>
+            <p>Hundreds of happy households and businesses trust us for repeat orders, year after year.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PRODUCTS SECTION
+       ============================================================ -->
+  <section class="section products-section" id="products">
+    <div class="container">
+      <div class="section-heading text-center reveal" data-reveal="up">
+        <p class="section-eyebrow">Our Collection</p>
+        <h2>Premium Chairs, Priced Right</h2>
+        <p class="section-lead">Browse our best-selling designs. Pick a color and order directly on WhatsApp —
+          availability and delivery confirmed within minutes.</p>
+      </div>
+
+      <div class="product-highlights-bar reveal" data-reveal="up">
+        <span class="highlight-chip"><i class="fa-solid fa-weight-hanging"></i> Up to 150kg Capacity</span>
+        <span class="highlight-chip"><i class="fa-solid fa-check-double"></i> 100% Pure Plastic</span>
+        <span class="highlight-chip"><i class="fa-solid fa-palette"></i> 5 Vibrant Colors</span>
+        <span class="highlight-chip"><i class="fa-solid fa-hourglass-half"></i> 10-Year Lifespan</span>
+        <span class="highlight-chip"><i class="fa-solid fa-layer-group"></i> Stackable & Easy to Clean</span>
+        <span class="highlight-chip delivery-chip"><i class="fa-solid fa-truck-fast"></i> Karachi Home Delivery
+          🚚 Available</span>
+      </div>
+
+      <div class="row g-4" id="productGrid">
+        <div class="col-12 col-sm-6 col-lg-4">
+          <article class="product-card reveal" data-reveal="up" data-name="Wifi Round Chair" data-price="1,700"
+            data-description="Comfortable premium plastic chair suitable for home and office use.">
+            <span class="product-badge">Best Seller</span>
+            <div id="carousel1" class="carousel slide product-carousel" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active"><img src="./products/img1.jfif" class="d-block w-100"
+                    alt="Wifi Round Chair" loading="lazy"></div>
+                <div class="carousel-item"><img src="./products/img1.1.jfif" class="d-block w-100"
+                    alt="Wifi Round Chair in Coral" loading="lazy"></div>
+                <div class="carousel-item"><img src="./products/img1.2.jfif" class="d-block w-100"
+                    alt="Wifi Round Chair in White" loading="lazy"></div>
+                <div class="carousel-item"><img src="./products/img1.3.jfif" class="d-block w-100"
+                    alt="Wifi Round Chair in Green" loading="lazy"></div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev"><span
+                  class="carousel-control-prev-icon"></span></button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next"><span
+                  class="carousel-control-next-icon"></span></button>
+            </div>
+            <div class="product-body">
+              <div class="d-flex justify-content-between align-items-start">
+                <h3 class="product-name">Wifi Round Chair</h3>
+                <span class="badge stock-badge in-stock">In Stock</span>
+              </div>
+              <div class="product-rating" aria-label="Rated 4.8 out of 5">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                <span class="rating-count">4.8 (132)</span>
+              </div>
+              <p class="product-desc">• Weight Capacity: 150 KG tak wazan bardasht kar sakta hai
+                • Material: Pure Plastic - khalis plastic
+                • Quality: Unbreakable - Totne ka khatra nahi
+                • Durability: 10 Saal ki life - Chalay ga life
+                • Strong & Durable - Mazboot aur payedar</p>
+              <p class="product-price">PKR 1,700</p>
+              <div class="product-actions">
+                <button type="button" class="btn btn-outline-details view-details-btn"
+                  data-images="./products/img1.jfif,./products/img1.1.jfif,./products/img1.2.jfif,./products/img1.3.jfif"
+                  data-rating="4.8 (132 reviews)" data-stock="In Stock" data-colors="Navy, Coral, White, Green"
+                  data-full-desc="•  Weight Capacity: 150 KG tak wazan bardasht kar sakta hai
+•  Material: Pure Plastic - khalis plastic
+•  Quality: Unbreakable - Totne ka khatra nahi
+•  Durability: 10 Saal ki life - Chalay ga life">
+                  View Details
+                </button>
+                <button type="button" class="btn btn-whatsapp-order whatsapp-order-btn btn-ripple">
+                  <i class="fa-brands fa-whatsapp"></i> Order
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+
+        <div class="col-12 col-sm-6 col-lg-4">
+          <article class="product-card reveal" data-reveal="up" data-name="09 model Koshan" data-price="1,300"
+            data-description="Comfortable premium plastic chair suitable for home and office use.">
+            <span class="product-badge">Best Seller</span>
+            <div id="carousel1" class="carousel slide product-carousel" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active"><img src="./products/mk1.jfif" class="d-block w-100"
+                    alt="Wifi Round Chair" loading="lazy"></div>
+                <div class="carousel-item"><img src="./products/mk2.jfif" class="d-block w-100"
+                    alt="Wifi Round Chair in Coral" loading="lazy"></div>
+                <div class="carousel-item"><img src="./products/09 model koshan.jfif" class="d-block w-100"
+                    alt="Wifi Round Chair in White" loading="lazy"></div>
+
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev"><span
+                  class="carousel-control-prev-icon"></span></button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next"><span
+                  class="carousel-control-next-icon"></span></button>
+            </div>
+            <div class="product-body">
+              <div class="d-flex justify-content-between align-items-start">
+                <h3 class="product-name"> 09 model Koshan </h3>
+                <span class="badge stock-badge in-stock">In Stock</span>
+              </div>
+              <div class="product-rating" aria-label="Rated 4.8 out of 5">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                <span class="rating-count">4.8 (132)</span>
+              </div>
+              <p class="product-desc">• Weight Capacity: 150 KG tak wazan bardasht kar sakta hai
+                • Material: Pure Plastic - khalis plastic
+                • Quality: Unbreakable - Totne ka khatra nahi
+                • Durability: 10 Saal ki life - Chalay ga life
+                • Strong & Durable - Mazboot aur payedar</p>
+              <p class="product-price">PKR 1,300</p>
+              <div class="product-actions">
+                <button type="button" class="btn btn-outline-details view-details-btn"
+                  data-images="./products/mk1.jfif,./products/mk2.jfif,./products/09 model koshan.jfif"
+                  data-rating="4.8 (132 reviews)" data-stock="In Stock" data-colors="Navy, Coral, White, Green"
+                  data-full-desc="•  Weight Capacity: 150 KG tak wazan bardasht kar sakta hai
+•  Material: Pure Plastic - khalis plastic
+•  Quality: Unbreakable - Totne ka khatra nahi
+•  Durability: 10 Saal ki life - Chalay ga life">
+                  View Details
+                </button>
+                <button type="button" class="btn btn-whatsapp-order whatsapp-order-btn btn-ripple">
+                  <i class="fa-brands fa-whatsapp"></i> Order
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4">
+          <article class="product-card reveal" data-reveal="up" data-name="Koshan relaxo chair" data-price="1,300"
+            data-description="Comfortable premium plastic chair suitable for home and office use.">
+            <span class="product-badge">Best Seller</span>
+            <div id="carousel1" class="carousel slide product-carousel" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active"><img src="./products/koshan relaxo.jfif" class="d-block w-100"
+                    alt="Wifi Round Chair" loading="lazy"></div>
+                <div class="carousel-item"><img src="./products/kr1.jfif" class="d-block w-100"
+                    alt="Wifi Round Chair in Coral" loading="lazy"></div>
+                <div class="carousel-item"><img src="./products/kr2.jfif" class="d-block w-100"
+                    alt="Wifi Round Chair in White" loading="lazy"></div>
+
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev"><span
+                  class="carousel-control-prev-icon"></span></button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next"><span
+                  class="carousel-control-next-icon"></span></button>
+            </div>
+            <div class="product-body">
+              <div class="d-flex justify-content-between align-items-start">
+                <h3 class="product-name">Koshan relaxo chair </h3>
+                <span class="badge stock-badge in-stock">In Stock</span>
+              </div>
+              <div class="product-rating" aria-label="Rated 4.8 out of 5">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                <span class="rating-count">4.8 (132)</span>
+              </div>
+              <p class="product-desc">• Weight Capacity: 150 KG tak wazan bardasht kar sakta hai
+                • Material: Pure Plastic - khalis plastic
+                • Quality: Unbreakable - Totne ka khatra nahi
+                • Durability: 10 Saal ki life - Chalay ga life
+                • Strong & Durable - Mazboot aur payedar</p>
+              <p class="product-price">PKR 1,300</p>
+              <div class="product-actions">
+                <button type="button" class="btn btn-outline-details view-details-btn"
+                  data-images="./products/koshan relaxo.jfif,./products/kr1.jfif,./products/kr2.jfif"
+                  data-rating="4.8 (132 reviews)" data-stock="In Stock" data-colors="Navy, Coral, White, Green"
+                  data-full-desc="•  Weight Capacity: 150 KG tak wazan bardasht kar sakta hai
+•  Material: Pure Plastic - khalis plastic
+•  Quality: Unbreakable - Totne ka khatra nahi
+•  Durability: 10 Saal ki life - Chalay ga life">
+                  View Details
+                </button>
+                <button type="button" class="btn btn-whatsapp-order whatsapp-order-btn btn-ripple">
+                  <i class="fa-brands fa-whatsapp"></i> Order
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+         <div class="col-12 col-sm-6 col-lg-4">
+          <article class="product-card reveal" data-reveal="up" data-name="Patti chair hi back " data-price="1,300"
+            data-description="Comfortable premium plastic chair suitable for home and office use.">
+            <span class="product-badge">Best Seller</span>
+            <div id="carousel1" class="carousel slide product-carousel" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active"><img src="./products/PT.jfif" class="d-block w-100"
+                    alt="Wifi Round Chair" loading="lazy"></div>
+                <div class="carousel-item"><img src="./products/PT1.jfif" class="d-block w-100"
+                    alt="Wifi Round Chair in Coral" loading="lazy"></div>
+                <div class="carousel-item"><img src="./products/PT2.jfif" class="d-block w-100"
+                    alt="Wifi Round Chair in White" loading="lazy"></div>
+
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev"><span
+                  class="carousel-control-prev-icon"></span></button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next"><span
+                  class="carousel-control-next-icon"></span></button>
+            </div>
+            <div class="product-body">
+              <div class="d-flex justify-content-between align-items-start">
+                <h3 class="product-name">Patti chair hi back </h3>
+                <span class="badge stock-badge in-stock">In Stock</span>
+              </div>
+              <div class="product-rating" aria-label="Rated 4.8 out of 5">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                  class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                <span class="rating-count">4.8 (132)</span>
+              </div>
+              <p class="product-desc">• Weight Capacity: 150 KG tak wazan bardasht kar sakta hai
+                • Material: Pure Plastic - khalis plastic
+                • Quality: Unbreakable - Totne ka khatra nahi
+                • Durability: 10 Saal ki life - Chalay ga life
+                • Strong & Durable - Mazboot aur payedar</p>
+              <p class="product-price">PKR 1,300</p>
+              <div class="product-actions">
+                <button type="button" class="btn btn-outline-details view-details-btn"
+                  data-images="./products/PT.jfif,./products/PT1.jfif,./products/PT2.jfif"
+                  data-rating="4.8 (132 reviews)" data-stock="In Stock" data-colors="Navy, Coral, White, Green"
+                  data-full-desc="•  Weight Capacity: 150 KG tak wazan bardasht kar sakta hai
+•  Material: Pure Plastic - khalis plastic
+•  Quality: Unbreakable - Totne ka khatra nahi
+•  Durability: 10 Saal ki life - Chalay ga life">
+                  View Details
+                </button>
+                <button type="button" class="btn btn-whatsapp-order whatsapp-order-btn btn-ripple">
+                  <i class="fa-brands fa-whatsapp"></i> Order
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+    
+          <div class="col-12 col-sm-6 col-lg-4">
+            <article class="product-card reveal" data-reveal="up" data-name="Wifi Round Chair" data-price="1,700"
+              data-description="Comfortable premium plastic chair suitable for home and office use.">
+              <span class="product-badge">Best Seller</span>
+              <div id="carousel-product-3" class="carousel slide product-carousel" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active"><img src="./products/img1.jfif" class="d-block w-100"
+                      alt="Wifi Round Chair" loading="lazy"></div>
+                  <div class="carousel-item"><img src="./products/img1.1.jfif" class="d-block w-100"
+                      alt="Wifi Round Chair in Coral" loading="lazy"></div>
+                  <div class="carousel-item"><img src="./products/img1.2.jfif" class="d-block w-100"
+                      alt="Wifi Round Chair in White" loading="lazy"></div>
+                  <div class="carousel-item"><img src="./products/img1.3.jfif" class="d-block w-100"
+                      alt="Wifi Round Chair in Green" loading="lazy"></div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel1"
+                  data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel1"
+                  data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+              </div>
+              <div class="product-body">
+                <div class="d-flex justify-content-between align-items-start">
+                  <h3 class="product-name">Wifi Round Chair</h3>
+                  <span class="badge stock-badge in-stock">In Stock</span>
+                </div>
+                <div class="product-rating" aria-label="Rated 4.8 out of 5">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                  <span class="rating-count">4.8 (132)</span>
+                </div>
+                <p class="product-desc">• Weight Capacity: 150 KG tak wazan bardasht kar sakta hai
+                  • Material: Pure Plastic - khalis plastic
+                  • Quality: Unbreakable - Totne ka khatra nahi
+                  • Durability: 10 Saal ki life - Chalay ga life
+                  • Strong & Durable - Mazboot aur payedar</p>
+                <p class="product-price">PKR 1,700</p>
+                <div class="product-actions">
+                  <button type="button" class="btn btn-outline-details view-details-btn"
+                    data-images="./products/img1.jfif,./products/img1.1.jfif,./products/img1.2.jfif,./products/img1.3.jfif"
+                    data-rating="4.8 (132 reviews)" data-stock="In Stock" data-colors="Navy, Coral, White, Green"
+                    data-full-desc="•  Weight Capacity: 150 KG tak wazan bardasht kar sakta hai
+•  Material: Pure Plastic - khalis plastic
+•  Quality: Unbreakable - Totne ka khatra nahi
+•  Durability: 10 Saal ki life - Chalay ga life">
+                    View Details
+                  </button>
+                  <button type="button" class="btn btn-whatsapp-order whatsapp-order-btn btn-ripple">
+                    <i class="fa-brands fa-whatsapp"></i> Order
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-4">
+            <article class="product-card reveal" data-reveal="up" data-reveal-delay="100"
+              data-name="Comfort Pro Office Chair" data-price="1,700"
+              data-description="Sturdy plastic office chair with ergonomic armrests for long work hours.">
+              <div id="carousel-product-4" class="carousel slide product-carousel" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active"><img src="./products/wavy.jfif" class="d-block w-100"
+                      alt="Comfort Pro Office Chair" loading="lazy"></div>
+                  <div class="carousel-item"><img src="./products/w1.jfif" class="d-block w-100"
+                      alt="Comfort Pro Office Chair in Grey" loading="lazy"></div>
+                  <div class="carousel-item"><img src="./products/w2.jfif" class="d-block w-100"
+                      alt="Comfort Pro Office Chair in Coral" loading="lazy"></div>
+                  <div class="carousel-item"><img src="./products/w3.jfif" class="d-block w-100"
+                      alt="Comfort Pro Office Chair in Navy" loading="lazy"></div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel2"
+                  data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel2"
+                  data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+              </div>
+              <div class="product-body">
+                <div class="d-flex justify-content-between align-items-start">
+                  <h3 class="product-name">Comfort Pro Office Chair</h3>
+                  <span class="badge stock-badge in-stock">In Stock</span>
+                </div>
+                <div class="product-rating" aria-label="Rated 4.6 out of 5">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i>
+                  <span class="rating-count">4.6 (98)</span>
+                </div>
+                <p class="product-desc">• Weight Capacity: 150 KG tak wazan bardasht kar sakta hai
+                  • Material: Pure Plastic - khalis plastic
+                  • Quality: Unbreakable - Totne ka khatra nahi
+                  • Durability: 10 Saal ki life - Chalay ga life
+                </p>
+                <p class="product-price">PKR 1,700</p>
+                <div class="product-actions">
+                  <button type="button" class="btn btn-outline-details view-details-btn"
+                    data-images="./products/wavy.jfif,./products/w1.jfif,./products/w2.jfif,./products/w3.jfif"
+                    data-rating="4.6 (98 reviews)" data-stock="In Stock" data-colors="Black, Grey, Navy"
+                    data-full-desc="•  Weight Capacity: 150 KG tak wazan bardasht kar sakta hai
+•  Material: Pure Plastic - khalis plastic
+•  Quality: Unbreakable - Totne ka khatra nahi
+•  Durability: 10 Saal ki life - Chalay ga life">
+                    View Details
+                  </button>
+                  <button type="button" class="btn btn-whatsapp-order whatsapp-order-btn btn-ripple">
+                    <i class="fa-brands fa-whatsapp"></i> Order
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-4">
+            <article class="product-card reveal" data-reveal="up" data-reveal-delay="200" data-name="relaxo star model"
+              data-price="1,700"
+              data-description="Lightweight, colorful plastic chairs ideal for children and casual seating.">
+              <span class="product-badge badge-new">New</span>
+              <div id="carousel3" class="carousel slide product-carousel" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active"><img src="./products/star model.jfif" class="d-block w-100"
+                      alt="Wavy Chairs" loading="lazy"></div>
+                  <div class="carousel-item"><img src="./products/sm1.jfif" class="d-block w-100"
+                      alt="Wavy Chairs in Pink" loading="lazy"></div>
+                  <div class="carousel-item"><img src="./products/sm2.jfif" class="d-block w-100"
+                      alt="Wavy Chairs in Blue" loading="lazy"></div>
+                  <div class="carousel-item"><img src="./products/sm4.jfif" class="d-block w-100"
+                      alt="Wavy Chairs in Green" loading="lazy"></div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel3"
+                  data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel3"
+                  data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+              </div>
+              <div class="product-body">
+                <div class="d-flex justify-content-between align-items-start">
+                  <h3 class="product-name">relaxo star model</h3>
+                  <span class="badge stock-badge in-stock">In Stock</span>
+                </div>
+                <div class="product-rating" aria-label="Rated 4.9 out of 5">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                  <span class="rating-count">4.9 (210)</span>
+                </div>
+                <p class="product-desc">• Weight Capacity: 150 KG tak wazan bardasht kar sakta hai
+                  • Material: Pure Plastic - khalis plastic
+                  • Quality: Unbreakable - Totne ka khatra nahi
+                  • Durability: 10 Saal ki life - Chalay ga life
+                </p>
+                <p class="product-price">PKR 1,700</p>
+                <div class="product-actions">
+                  <button type="button" class="btn btn-outline-details view-details-btn"
+                    data-images="./products/star model.jfif,./products/sm1.jfif,./products/sm3.jfif,./products/sm4.jfif"
+                    data-rating="4.9 (210 reviews)" data-stock="In Stock" data-colors="Yellow, Pink, Blue, Green"
+                    data-full-desc="•  Weight Capacity: 150 KG tak wazan bardasht kar sakta hai
+•  Material: Pure Plastic - khalis plastic
+•  Quality: Unbreakable - Totne ka khatra nahi
+•  Durability: 10 Saal ki life - Chalay ga life">
+                    View Details
+                  </button>
+                  <button type="button" class="btn btn-whatsapp-order whatsapp-order-btn btn-ripple">
+                    <i class="fa-brands fa-whatsapp"></i> Order
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-4">
+            <article class="product-card reveal" data-reveal="up" data-reveal-delay="200" data-name="Wavy sofa Chairs"
+              data-price="1,700"
+              data-description="Lightweight, colorful plastic chairs ideal for children and casual seating.">
+              <span class="product-badge badge-new">New</span>
+              <div id="carousel3" class="carousel slide product-carousel" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active"><img src="./products/wavy sofa.jfif" class="d-block w-100"
+                      alt="Wavy Chairs" loading="lazy"></div>
+                  <div class="carousel-item"><img src="./products/wav1.jfif" class="d-block w-100"
+                      alt="Wavy Chairs in Pink" loading="lazy"></div>
+                  <div class="carousel-item"><img src="./products//wav2.jfif" class="d-block w-100"
+                      alt="Wavy Chairs in Blue" loading="lazy"></div>
+                  <div class="carousel-item"><img src="./products//wav3.jfif" class="d-block w-100"
+                      alt="Wavy Chairs in Green" loading="lazy"></div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel3"
+                  data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel3"
+                  data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+              </div>
+              <div class="product-body">
+                <div class="d-flex justify-content-between align-items-start">
+                  <h3 class="product-name">Wavy Sofa</h3>
+                  <span class="badge stock-badge in-stock">In Stock</span>
+                </div>
+                <div class="product-rating" aria-label="Rated 4.9 out of 5">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                  <span class="rating-count">4.9 (210)</span>
+                </div>
+                <p class="product-desc">• Weight Capacity: 150 KG tak wazan bardasht kar sakta hai
+                  • Material: Pure Plastic - khalis plastic
+                  • Quality: Unbreakable - Totne ka khatra nahi
+                  • Durability: 10 Saal ki life - Chalay ga life
+                </p>
+                <p class="product-price">PKR 1,700</p>
+                <div class="product-actions">
+                  <button type="button" class="btn btn-outline-details view-details-btn"
+                    data-images="./products/wavy sofa.jfif,./products/wav5.jfif,./products/wav2.jfif,./products/wav4.jfif"
+                    data-rating="4.9 (210 reviews)" data-stock="In Stock" data-colors="Yellow, Pink, Blue, Green"
+                    data-full-desc="•  Weight Capacity: 150 KG tak wazan bardasht kar sakta hai
+•  Material: Pure Plastic - khalis plastic
+•  Quality: Unbreakable - Totne ka khatra nahi
+•  Durability: 10 Saal ki life - Chalay ga life">
+                    View Details
+                  </button>
+                  <button type="button" class="btn btn-whatsapp-order whatsapp-order-btn btn-ripple">
+                    <i class="fa-brands fa-whatsapp"></i> Order
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4">
+            <article class="product-card reveal" data-reveal="up" data-reveal-delay="200" data-name="Wifi flower model"
+              data-price="1,800"
+              data-description="Lightweight, colorful plastic chairs ideal for children and casual seating.">
+              <span class="product-badge badge-new">New</span>
+              <div id="carousel3" class="carousel slide product-carousel" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active"><img src="./products/wifi flower.jfif" class="d-block w-100"
+                      alt="Wavy Chairs" loading="lazy"></div>
+                  <div class="carousel-item"><img src="./products/wf1.jfif" class="d-block w-100"
+                      alt="Wavy Chairs in Pink" loading="lazy"></div>
+                  <div class="carousel-item"><img src="./products//wf2.jfif" class="d-block w-100"
+                      alt="Wavy Chairs in Blue" loading="lazy"></div>
+                  <div class="carousel-item"><img src="./products/wf4.jfif" class="d-block w-100"
+                      alt="Wavy Chairs in Green" loading="lazy"></div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel3"
+                  data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel3"
+                  data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+              </div>
+              <div class="product-body">
+                <div class="d-flex justify-content-between align-items-start">
+                  <h3 class="product-name">Wifi flower model</h3>
+                  <span class="badge stock-badge in-stock">In Stock</span>
+                </div>
+                <div class="product-rating" aria-label="Rated 4.9 out of 5">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                  <span class="rating-count">4.9 (210)</span>
+                </div>
+                <p class="product-desc">• Weight Capacity: 150 KG tak wazan bardasht kar sakta hai
+                  • Material: Pure Plastic - khalis plastic
+                  • Quality: Unbreakable - Totne ka khatra nahi
+                  • Durability: 10 Saal ki life - Chalay ga life
+                </p>
+                <p class="product-price">PKR 1,800</p>
+                <div class="product-actions">
+                  <button type="button" class="btn btn-outline-details view-details-btn"
+                    data-images="./products/wifi flower.jfif,./products/wf1.jfif,./products/wf4.jfif,./products/wf2.jfif"
+                    data-rating="4.9 (210 reviews)" data-stock="In Stock" data-colors="Yellow, Pink, Blue, Green"
+                    data-full-desc="•  Weight Capacity: 150 KG tak wazan bardasht kar sakta hai
+•  Material: Pure Plastic - khalis plastic
+•  Quality: Unbreakable - Totne ka khatra nahi
+•  Durability: 10 Saal ki life - Chalay ga life">
+                    View Details
+                  </button>
+                  <button type="button" class="btn btn-whatsapp-order whatsapp-order-btn btn-ripple">
+                    <i class="fa-brands fa-whatsapp"></i> Order
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-4">
+            <article class="product-card reveal" data-reveal="up" data-name="Tenco Pure Wifi Chair" data-price="2,700"
+              data-description="New article chair with 150 kg weight support, pure plastic body, unbreakable design and 10-year durability.">
+              <div id="carousel-product-8" class="carousel slide product-carousel" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active"><img src="./products/tecno.jpeg" class="d-block w-100"
+                      alt="Tenco Pure Wifi Chair" loading="lazy"></div>
+                  <div class="carousel-item"><img src="./products/t2.jpeg" class="d-block w-100"
+                      alt="Tenco Pure Wifi Chair in Beige" loading="lazy"></div>
+                  <div class="carousel-item"><img src="./products/t3.jpeg" class="d-block w-100"
+                      alt="Tenco Pure Wifi Chair in Navy" loading="lazy"></div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel4"
+                  data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel4"
+                  data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+              </div>
+              <div class="product-body">
+                <div class="d-flex justify-content-between align-items-start">
+                  <h3 class="product-name">Tenco Pure Wifi Chair</h3>
+                  <span class="badge stock-badge limited-stock">Limited Stock</span>
+                </div>
+                <div class="product-rating" aria-label="Rated 4.7 out of 5">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                  <span class="rating-count">4.7 (76)</span>
+                </div>
+                <p class="product-desc">•  Weight Capacity: 150 KG tak wazan bardasht kar sakta hai
+•  Material: Pure Plastic - khalis plastic
+•  Quality: Unbreakable - Totne ka khatra nahi
+•  Durability: 10 Saal ki life - Chalay ga life"</p>
+                <p class="product-price">PKR 2,700</p>
+                <div class="product-actions">
+                  <button type="button" class="btn btn-outline-details view-details-btn"
+                    data-images="./products/t2.jpeg,./products/tecno.jpeg,./products/t3.jpeg" data-rating="4.7 (76 reviews)"
+                    data-stock="Limited Stock" data-colors="Red, Blue, Cream, Green, Orange"
+                    data-full-desc="•  Weight Capacity: 150 KG tak wazan bardasht kar sakta hai
+•  Material: Pure Plastic - khalis plastic
+•  Quality: Unbreakable - Totne ka khatra nahi
+•  Durability: 10 Saal ki life - Chalay ga life">
+                    View Details
+                  </button>
+                  <button type="button" class="btn btn-whatsapp-order whatsapp-order-btn btn-ripple">
+                    <i class="fa-brands fa-whatsapp"></i> Order
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+           <div class="col-12 col-sm-6 col-lg-4">
+            <article class="product-card reveal" data-reveal="up" data-name="super relaxo chair" data-price="2,700"
+              data-description="New article chair with 150 kg weight support, pure plastic body, unbreakable design and 10-year durability.">
+              <div id="carousel-product-8" class="carousel slide product-carousel" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active"><img src="./products/super relaxo.jfif" class="d-block w-100"
+                      alt="Tenco Pure Wifi Chair" loading="lazy"></div>
+                  <div class="carousel-item"><img src="./products/sr1.jfif" class="d-block w-100"
+                      alt="Tenco Pure Wifi Chair in Beige" loading="lazy"></div>
+                  <div class="carousel-item"><img src="./products/sr2.jfif" class="d-block w-100"
+                      alt="Tenco Pure Wifi Chair in Navy" loading="lazy"></div>
+                </div>
+                 
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel4"
+                  data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel4"
+                  data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+              </div>
+              <div class="product-body">
+                <div class="d-flex justify-content-between align-items-start">
+                  <h3 class="product-name">Super relaxo chair (Luxury)</h3>
+                  <span class="badge stock-badge limited-stock">Limited Stock</span>
+                </div>
+                <div class="product-rating" aria-label="Rated 4.7 out of 5">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                  <span class="rating-count">4.7 (76)</span>
+                </div>
+                <p class="product-desc">•  Weight Capacity: 150 KG tak wazan bardasht kar sakta hai
+•  Material: Pure Plastic - khalis plastic
+•  Quality: Unbreakable - Totne ka khatra nahi
+•  Durability: 10 Saal ki life - Chalay ga life"</p>
+                <p class="product-price">PKR 2,700</p>
+                <div class="product-actions">
+                  <button type="button" class="btn btn-outline-details view-details-btn"
+                    data-images="./products/sr3.jfif,./products/sr4.jfif,./products/sr5.jfif" data-rating="4.7 (76 reviews)"
+                    data-stock="Limited Stock" data-colors="Red, Blue, Cream, Green, Orange"
+                    data-full-desc="•  Weight Capacity: 150 KG tak wazan bardasht kar sakta hai
+•  Material: Pure Plastic - khalis plastic
+•  Quality: Unbreakable - Totne ka khatra nahi
+•  Durability: 10 Saal ki life - Chalay ga life">
+                    View Details
+                  </button>
+                  <button type="button" class="btn btn-whatsapp-order whatsapp-order-btn btn-ripple">
+                    <i class="fa-brands fa-whatsapp"></i> Order
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4">
+            <article class="product-card reveal" data-reveal="up" data-name="Two-tune chair New" data-price="2,700"
+              data-description="New article chair with 150 kg weight support, pure plastic body, unbreakable design and 10-year durability.">
+              <div id="carousel-product-8" class="carousel slide product-carousel" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active"><img src="./products/two tune.jfif" class="d-block w-100"
+                      alt="Tenco Pure Wifi Chair" loading="lazy"></div>
+                  <div class="carousel-item"><img src="./products/tt1.jfif" class="d-block w-100"
+                      alt="Tenco Pure Wifi Chair in Beige" loading="lazy"></div>
+                  <div class="carousel-item"><img src="./products/tt2.jfif" class="d-block w-100"
+                      alt="Tenco Pure Wifi Chair in Navy" loading="lazy"></div>
+                </div>
+                 
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel4"
+                  data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel4"
+                  data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+              </div>
+              <div class="product-body">
+                <div class="d-flex justify-content-between align-items-start">
+                  <h3 class="product-name">Two-tune chair New</h3>
+                  <span class="badge stock-badge limited-stock">Limited Stock</span>
+                </div>
+                <div class="product-rating" aria-label="Rated 4.7 out of 5">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                    class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                  <span class="rating-count">4.7 (76)</span>
+                </div>
+                <p class="product-desc">•  Weight Capacity: 150 KG tak wazan bardasht kar sakta hai
+•  Material: Pure Plastic - khalis plastic
+•  Quality: Unbreakable - Totne ka khatra nahi
+•  Durability: 10 Saal ki life - Chalay ga life"</p>
+                <p class="product-price">PKR 2,700</p>
+                <div class="product-actions">
+                  <button type="button" class="btn btn-outline-details view-details-btn"
+                    data-images="./products/two tune.jfif,./products/tt1.jfif,./products/tt2.jfif" data-rating="4.7 (76 reviews)"
+                    data-stock="Limited Stock" data-colors="Red, Blue, Cream, Green, Orange"
+                    data-full-desc="•  Weight Capacity: 150 KG tak wazan bardasht kar sakta hai
+•  Material: Pure Plastic - khalis plastic
+•  Quality: Unbreakable - Totne ka khatra nahi
+•  Durability: 10 Saal ki life - Chalay ga life">
+                    View Details
+                  </button>
+                  <button type="button" class="btn btn-whatsapp-order whatsapp-order-btn btn-ripple">
+                    <i class="fa-brands fa-whatsapp"></i> Order
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+          
+
+
+          
+             
+  </section>
+
+  <!-- ============================================================
+       STATISTICS SECTION
+       ============================================================ -->
+  <section class="section stats-section">
+    <div class="container">
+      <div class="row g-4 text-center">
+        <div class="col-6 col-lg-3">
+          <div class="stat-card reveal" data-reveal="up">
+            <div class="stat-number"><span class="counter" data-target="500">0</span>+</div>
+            <p class="stat-label">Happy Customers</p>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="stat-card reveal" data-reveal="up" data-reveal-delay="100">
+            <div class="stat-number"><span class="counter" data-target="100">0</span>+</div>
+            <p class="stat-label">Chair Designs</p>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="stat-card reveal" data-reveal="up" data-reveal-delay="200">
+            <div class="stat-number"><span class="counter" data-target="10">0</span>+</div>
+            <p class="stat-label">Years Experience</p>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="stat-card reveal" data-reveal="up" data-reveal-delay="300">
+            <div class="stat-number"><span class="counter-static">24/7</span></div>
+            <p class="stat-label">Customer Support</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       TESTIMONIALS
+       ============================================================ -->
+  <section class="section testimonials-section" id="testimonials">
+    <div class="container">
+      <div class="section-heading text-center reveal" data-reveal="up">
+        <p class="section-eyebrow">Testimonials</p>
+        <h2>What Our Customers Say</h2>
+      </div>
+
+      <div id="testimonialCarousel" class="carousel slide reveal" data-reveal="up" data-bs-ride="carousel"
+        data-bs-interval="4500">
+        <div class="carousel-inner">
+
+          <div class="carosel-item active">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <div class="testimonial-card">
+                  <div class="testimonial-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                      class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                  </div>
+                  <p class="testimonial-text">"We furnished our entire café with chairs from Saha Home Decor. Great
+                    quality, fast delivery, and the WhatsApp ordering made everything so easy."</p>
+                  <div class="testimonial-author">
+                    <img src="https://placehold.co/80x80/1B365D/FFFFFF?text=AK" alt="Ayesha Khan" loading="lazy">
+                    <div>
+                      <h4>Ayesha Khan</h4>
+                      <span>DHA, Karachi</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <div class="testimonial-card">
+                  <div class="testimonial-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                      class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                  </div>
+                  <p class="testimonial-text">"Ordered 50 chairs for a wedding function on short notice. Saha Home Decor
+                    delivered on time and the chairs looked premium in every photo."</p>
+                  <div class="testimonial-author">
+                    <img src="https://placehold.co/80x80/E06D53/FFFFFF?text=BA" alt="Bilal Ahmed" loading="lazy">
+                    <div>
+                      <h4>Bilal Ahmed</h4>
+                      <span>Gulshan-e-Iqbal, Karachi</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <div class="testimonial-card">
+                  <div class="testimonial-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                      class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                  </div>
+                  <p class="testimonial-text">"The kids' chairs are adorable and sturdy — my children have been using
+                    them daily for over a year without any cracks or fading."</p>
+                  <div class="testimonial-author">
+                    <img src="https://placehold.co/80x80/25D366/FFFFFF?text=SM" alt="Sana Malik" loading="lazy">
+                    <div>
+                      <h4>Sana Malik</h4>
+                      <span>Clifton, Karachi</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <div class="testimonial-card">
+                  <div class="testimonial-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                      class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                  </div>
+                  <p class="testimonial-text">"Excellent service from start to finish. The team helped me pick the right
+                    office chairs over WhatsApp and delivery was quicker than expected."</p>
+                  <div class="testimonial-author">
+                    <img src="https://placehold.co/80x80/1B365D/FFFFFF?text=FS" alt="Farhan Sheikh" loading="lazy">
+                    <div>
+                      <h4>Farhan Sheikh</h4>
+                      <span>North Nazimabad, Karachi</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+          data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+          data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+        <div class="carousel-indicators-custom">
+          <button data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"></button>
+          <button data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></button>
+          <button data-bs-target="#testimonialCarousel" data-bs-slide-to="2"></button>
+          <button data-bs-target="#testimonialCarousel" data-bs-slide-to="3"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ABOUT US
+       ============================================================ -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 reveal" data-reveal="left">
+          <div class="about-image-wrap">
+            <img src="./products/owner.png" alt="Saha Home Decor showroom in Karachi" loading="lazy"
+              class="about-image">
+            <div class="about-badge">
+              <strong>10+</strong>
+              <span>Years of Trust</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 reveal" data-reveal="right">
+          <p class="section-eyebrow">About Us</p>
+          <h2>Furnishing Karachi Homes, One Chair at a Time</h2>
+          <p class="about-text">Saha Home Decor is a Karachi-based reseller of premium plastic chairs and home
+            furniture, proudly operating from the Furniture Market in Orangi Town. What started as a small family stall
+            has grown into a trusted name for homes, offices, cafes and event organizers across the city.</p>
+
+          <div class="about-points">
+            <div class="about-point">
+              <i class="fa-solid fa-bullseye"></i>
+              <div>
+                <h4>Our Mission</h4>
+                <p>To make premium-quality seating accessible and affordable for every Pakistani household and business.
+                </p>
+              </div>
+            </div>
+            <div class="about-point">
+              <i class="fa-solid fa-eye"></i>
+              <div>
+                <h4>Our Vision</h4>
+                <p>To become Karachi's most trusted name in plastic chairs and home furniture, known for reliability and
+                  value.</p>
+              </div>
+            </div>
+            <div class="about-point">
+              <i class="fa-solid fa-medal"></i>
+              <div>
+                <h4>Quality Commitment</h4>
+                <p>Every chair is inspected before dispatch, so what you order on WhatsApp is exactly what arrives at
+                  your door.</p>
+              </div>
+            </div>
+            <div class="about-point">
+              <i class="fa-solid fa-handshake"></i>
+              <div>
+                <h4>Customer Satisfaction</h4>
+                <p>From first inquiry to delivery, our team stays reachable on WhatsApp for a smooth, personal buying
+                  experience.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACT SECTION
+       ============================================================ -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-heading text-center reveal" data-reveal="up">
+        <p class="section-eyebrow">Get In Touch</p>
+        <h2>Visit, Call or Message Us</h2>
+        <p class="section-lead">We're happy to help you choose the right chairs for your home, office or event.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Contact Info -->
+        <div class="col-lg-5">
+          <div class="contact-info-card reveal" data-reveal="left">
+            <div class="contact-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <h4>Address</h4>
+                <p>Orangi Town Sector 11½, Iqbal Market,<br>Near MCB Bank, Furniture Market,<br>Karachi, Pakistan</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <h4>Phone</h4>
+                <p><a href="tel:+923197810809">+92 319 7810809</a></p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fa-brands fa-whatsapp"></i>
+              <div>
+                <h4>WhatsApp</h4>
+                <p><a href="#" class="whatsapp-generic-btn"
+                    data-message="Hello SAHA HOME DECOR, I would like to inquire about your chairs.">+92 319 7810809</a>
+                </p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <h4>Email</h4>
+                <p><a href="mailto:muddabir23136@gmail.com">muddabir23136@gmail.com</a></p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fa-solid fa-clock"></i>
+              <div>
+                <h4>Business Hours</h4>
+                <p>Mon – Sat: 10:00 AM – 9:00 PM<br>Sunday: By Appointment</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="map-embed reveal" data-reveal="left">
+            <iframe
+              src="https://www.google.com/maps?q=Orangi%20Town%20Sector%2011%C2%BD%20Iqbal%20Market%20Karachi&output=embed"
+              width="100%" height="280" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade" title="Saha Home Decor location on Google Maps"></iframe>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="col-lg-7">
+          <div class="contact-form-card reveal" data-reveal="right">
+            <h3>Send Us a Message</h3>
+            <form id="contactForm" class="row g-3 needs-validation" novalidate>
+              <div class="col-md-6">
+                <label for="cf-name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="cf-name" required>
+                <div class="invalid-feedback">Please enter your name.</div>
+              </div>
+              <div class="col-md-6">
+                <label for="cf-phone" class="form-label">Phone</label>
+                <input type="tel" class="form-control" id="cf-phone" required pattern="[0-9+\s-]{7,15}">
+                <div class="invalid-feedback">Please enter a valid phone number.</div>
+              </div>
+              <div class="col-md-6">
+                <label for="cf-email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="cf-email" required>
+                <div class="invalid-feedback">Please enter a valid email address.</div>
+              </div>
+              <div class="col-md-6">
+                <label for="cf-subject" class="form-label">Subject</label>
+                <input type="text" class="form-control" id="cf-subject" required>
+                <div class="invalid-feedback">Please enter a subject.</div>
+              </div>
+              <div class="col-12">
+                <label for="cf-message" class="form-label">Message</label>
+                <textarea class="form-control" id="cf-message" rows="4" required></textarea>
+                <div class="invalid-feedback">Please enter your message.</div>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-form-submit btn-ripple">
+                  <i class="fa-brands fa-whatsapp"></i> Send via WhatsApp
+                </button>
+              </div>
+            </form>
+            <div id="formSuccessMsg" class="form-success-msg d-none">
+              <i class="fa-solid fa-circle-check"></i> Message ready — opening WhatsApp...
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <a href="#home" class="footer-brand">
+            <svg width="36" height="36" viewBox="0 0 64 64" aria-hidden="true">
+              <rect width="64" height="64" rx="16" fill="#FFFFFF" />
+              <path d="M20 14h24v18a4 4 0 0 1-4 4H24a4 4 0 0 1-4-4V14Z" fill="none" stroke="#1B365D" stroke-width="3"
+                stroke-linejoin="round" />
+              <path d="M22 36v8M42 36v8M20 20h24" fill="none" stroke="#1B365D" stroke-width="3"
+                stroke-linecap="round" />
+              <path d="M22 44l-3 8M42 44l3 8" fill="none" stroke="#E06D53" stroke-width="3" stroke-linecap="round" />
+            </svg>
+            <span>SAHA HOME DECOR</span>
+          </a>
+          <p class="footer-about">Karachi's trusted reseller of premium plastic chairs and home furniture — durable,
+            stylish and affordable for every space.</p>
+          <div class="footer-socials">
+            <a href="#" class="whatsapp-generic-btn"
+              data-message="Hello SAHA HOME DECOR, I found you online and would like to know more."
+              aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-6">
+          <h5>Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6">
+          <h5>Products</h5>
+          <ul class="footer-links">
+            <li><a href="#products">Modern Chairs</a></li>
+            <li><a href="#products">Office Chairs</a></li>
+            <li><a href="#products">Kids Chairs</a></li>
+            <li><a href="#products">Dining Chairs</a></li>
+            <li><a href="#products">Outdoor &amp; Event Chairs</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <h5>Contact</h5>
+          <ul class="footer-links footer-contact">
+            <li><i class="fa-solid fa-location-dot"></i> Orangi Town Sector 11½, Iqbal Market, Karachi</li>
+            <li><i class="fa-solid fa-phone"></i> <a href="tel:+923197810809">+92 319 7810809</a></li>
+            <li><i class="fa-solid fa-envelope"></i> <a
+                href="mailto:muddabir23136@gmail.com">muddabir23136@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <hr>
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear"></span> Saha Home Decor. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       FLOATING BUTTONS
+       ============================================================ -->
+  <a href="#" class="floating-whatsapp whatsapp-generic-btn" aria-label="Chat on WhatsApp"
+    data-message="Hello SAHA HOME DECOR, I am interested in your chairs. Please share more details.">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <button type="button" class="floating-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- ============================================================
+       STICKY ORDER BAR (fades in while scrolling down)
+       ============================================================ -->
+  <div class="sticky-order-bar" id="stickyOrderBar">
+    <div class="sticky-order-inner">
+      <span class="sticky-order-delivery"><i class="fa-solid fa-truck-fast"></i> Karachi Home Delivery 🚚</span>
+      <a href="#" class="btn btn-sticky-order whatsapp-generic-btn"
+        data-message="Hello SAHA HOME DECOR, I would like to place an order. Please share details.">
+        <i class="fa-brands fa-whatsapp"></i> Order Now
+      </a>
+    </div>
+  </div>
+  <script>
+    (function () {
+      var bar = document.getElementById('stickyOrderBar');
+      if (!bar) return;
+      var shown = false;
+      function toggleBar() {
+        var shouldShow = window.scrollY > window.innerHeight * 0.5;
+        if (shouldShow !== shown) {
+          shown = shouldShow;
+          bar.classList.toggle('show', shown);
+          document.body.classList.toggle('has-sticky-bar', shown);
+        }
+      }
+      window.addEventListener('scroll', toggleBar, { passive: true });
+      toggleBar();
+    })();
+  </script>
+
+  <!-- ============================================================
+       PRODUCT DETAILS MODAL (shared, populated dynamically by JS)
+       ============================================================ -->
+  <div class="modal fade" id="productModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="pm-name">Product Name</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div id="pmCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner" id="pm-carousel-inner"></div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#pmCarousel"
+                  data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+                <button class="carousel-control-next" type="button" data-bs-target="#pmCarousel"
+                  data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <p class="modal-price" id="pm-price"></p>
+              <p class="mb-2" id="pm-rating"></p>
+              <p class="mb-2"><strong>Colors:</strong> <span id="pm-colors"></span></p>
+              <p class="mb-3"><strong>Stock Status:</strong> <span id="pm-stock"></span></p>
+              <p id="pm-desc"></p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-whatsapp-order whatsapp-order-btn btn-ripple" id="pm-order-btn">
+            <i class="fa-brands fa-whatsapp"></i> Order on WhatsApp
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       GALLERY LIGHTBOX MODAL
+       ============================================================ -->
+  <div class="modal fade" id="lightboxModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content lightbox-content">
+        <button type="button" class="btn-close btn-close-white lightbox-close" data-bs-dismiss="modal"
+          aria-label="Close"></button>
+        <img src="" alt="Gallery preview" id="lightboxImg">
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== BOOTSTRAP JS BUNDLE (CDN) ===================== -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- ===================== CUSTOM JAVASCRIPT ===================== -->
+  <script src="script.js"></script>
+</body>
+
+</html>
